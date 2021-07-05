@@ -18,7 +18,7 @@ public class CountUpTimer : MonoBehaviour
     {
         minutes = (int)(Time.time / 60f);
         seconds = (int)(Time.time % 60f);
-        if (minutes >= 3)
+        if (minutes >= 3 && seconds >= 1)
         {
             // what happens when its 3 do load up to end screne when timer reaches 3 
         } else
