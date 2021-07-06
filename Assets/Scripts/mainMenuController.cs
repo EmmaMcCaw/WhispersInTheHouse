@@ -20,12 +20,8 @@ public class mainMenuController : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("PLAY GAME");
+
+        SceneManager.LoadScene("LayoutScene");
     }
 
-    public void LoadScene(string MainMenu) 
-    {
-        SceneManager.LoadScene(MainMenu); 
-    }
-
-   
 }
