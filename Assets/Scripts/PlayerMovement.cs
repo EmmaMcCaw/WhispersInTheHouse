@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float Speed = 20f;
     float horizontal;
     float vertical;
-    private Rigidbody2D playerController;
+    public Rigidbody2D playerController;
     // Start is called before the first frame update
     void Start()
     {
