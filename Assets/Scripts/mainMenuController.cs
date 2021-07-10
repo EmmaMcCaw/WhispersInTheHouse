@@ -24,4 +24,13 @@ public class mainMenuController : MonoBehaviour
         SceneManager.LoadScene("LayoutScene");
     }
 
+    public void ReturnToMenu()
+    {
+        Debug.Log("RETURN TO MENU");
+
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
+    
 }

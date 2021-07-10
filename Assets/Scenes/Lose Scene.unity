@@ -285,9 +285,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 922380494}
-        m_TargetAssemblyTypeName: PlayAgainController, Assembly-CSharp
-        m_MethodName: PlayAgain
+      - m_Target: {fileID: 922380493}
+        m_TargetAssemblyTypeName: mainMenuController, Assembly-CSharp
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -510,7 +510,6 @@ GameObject:
   - component: {fileID: 922380490}
   - component: {fileID: 922380489}
   - component: {fileID: 922380493}
-  - component: {fileID: 922380494}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -610,19 +609,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 922380488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75ae999cc7015448b5339218b9a986f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &922380494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 922380488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 893af08d08881cf44ba0914a97cc5c12, type: 3}
+  m_Script: {fileID: 11500000, guid: 4436f91ce1940b145bc60fc06f435e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1130793131
@@ -854,7 +841,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 922380493}
-        m_TargetAssemblyTypeName: ReturnToMenuController, Assembly-CSharp
+        m_TargetAssemblyTypeName: mainMenuController, Assembly-CSharp
         m_MethodName: ReturnToMenu
         m_Mode: 1
         m_Arguments:
