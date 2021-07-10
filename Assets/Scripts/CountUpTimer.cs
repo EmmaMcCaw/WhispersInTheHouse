@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CountUpTimer : MonoBehaviour
 {
@@ -20,11 +21,10 @@ public class CountUpTimer : MonoBehaviour
         seconds = (int)(Time.time % 60f);
         if (minutes >= 3 && seconds >= 1)
         {
-            // what happens when its 3 do load up to end screne when timer reaches 3 
+            SceneManager.LoadScene("LoseScene");
         } else
         {
             counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
         }
-        
     }
 }
