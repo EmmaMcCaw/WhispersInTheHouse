@@ -29,19 +29,18 @@ public class VictoryTrigger : MonoBehaviour
 
         minutes = (int)(timer / 60f);
         seconds = (int)(timer % 60f);
-
-        //if(OnTriggerEnter2D.gameObject.name == "EndGoal")
-        //{
-            //SceneManager.LoadScene("VictoryScene");
-      //  }
-        //else
-       // {
-           // counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
-       // }
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-       // SceneManager.LoadScene("VictoryScene");
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        SceneManager.LoadScene("VictoryScene");
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Endgoal")
+        {
+            counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+        }
+    }
 }

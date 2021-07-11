@@ -5581,7 +5581,7 @@ MonoBehaviour:
   seconds: 0
   minutes: 0
   timer: 0
-  EndGoal: {fileID: 0}
+  EndGoal: {fileID: 1820396321}
 --- !u!212 &1820396323
 SpriteRenderer:
   m_ObjectHideFlags: 0
